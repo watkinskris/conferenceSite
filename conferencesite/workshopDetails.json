@@ -1,0 +1,14 @@
+{
+"workshops": [ 
+{"workshop_name": "Verifying Information on Social Networks", "speaker_name": "Lyle Jones", "session_num": "1", "room_num": "10", "start_time": "09:00", "end_time": "12:00"},
+{"workshop_name": "Investigations Involving Automobile Media", "speaker_name": "Stefan Olrygsson", "session_num": "1", "room_num": "11a", "start_time": "09:00", "end_time": "15:30"},
+{"workshop_name": "Authentication of Digital Images", "speaker_name": "Kristina Watkins", "session_num": "1", "room_num": "12", "start_time": "09:00", "end_time": "12:00"},
+{"workshop_name": "Physical Layer Security", "speaker_name": "Lyly Jones", "session_num": "2", "room_num": "10", "start_time": "13:00", "end_time": "15:30"},
+{"workshop_name": "Machine Learning: Security", "speaker_name": "Kristina Watkins", "session_num": "2", "room_num": "11b", "start_time": "13:00", "end_time": "15:30" },
+{"workshop_name": "Security of Biometrics", "speaker_name": "Liza Smith", "session_num": "2", "room_num": "12", "start_time": "13:00", "end_time": "15:30"},
+{"workshop_name": "Digital Forensics: Incident Response", "speaker_name": "Lyle Jones", "session_num": "3", "room_num": "10", "start_time": "13:00", "end_time": "15:30"},
+{"workshop_name": "Identification and Authentication of Incidents", "speaker_name": "Stefan Orlygsson","session_num": "3", "room_num": "11", "start_time": "13:00", "end_time": "15:30"},
+{"workshop_name": "Management of the Incident Response Team", "speaker_name": "Kristina Watkins", "session_num": "3", "room_num": "12", "start_time": "13:00", "end_time": "15:30"}
+
+]
+}

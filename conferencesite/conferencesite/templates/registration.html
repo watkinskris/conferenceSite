@@ -1,0 +1,80 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--    Name: Kristina Watkins
+        Assignment: CS336 Assignment #4
+        Created: 10/30/2017
+        Description:  registration page for the military cyber forensics conference site
+-->
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="{% static 'styles/registration.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt:300" rel="stylesheet">
+
+    <meta name="author" content="Kristina Watkins">
+    <meta charset="UTF-8">
+    <meta name="description" content="Military Cyber Forensics Conference Rgistration Page">
+    <meta name="keywords" content="cyber, military, forensics, security, register">
+    <meta name="robots" content="nofollow, noimageindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Military Cyber Forensics Conference Registration</title>
+</head>
+<body>
+    <div class="content">
+        {% include 'partials/navigation.html' %}
+        <main>
+            <h1 class="pageTitle">Military Cyber Forensics Conference Registration Form</h1>
+            <section class="infoPanel">
+                <form id="registrationForm" action="{% url 'registration' %}" method="post">
+                    {% csrf_token %}
+                    <fieldset id="contact_details">
+                        <legend>Contact Details</legend>
+                        {{ registration_form.title }}
+                        {{ registration_form.firstname.label_tag }}{{ registration_form.firstname }}
+                        {{ registration_form.lastname.label_tag }}{{ registration_form.lastname }} <br>
+                        {{ registration_form.address1.label_tag }}{{ registration_form.address1 }}
+                        {{ registration_form.address2.label_tag }}{{ registration_form.address2 }}<br>
+                        {{ registration_form.city.label_tag }}{{ registration_form.city }}
+                        {{ registration_form.state.label_tag }}{{ registration_form.state }} <br>
+                        {{ registration_form.zipcode.label_tag }}{{ registration_form.zipcode }}
+                        {{ registration_form.telephone.label_tag }}{{ registration_form.telephone.errors }}{{ registration_form.telephone }}
+                        {{ registration_form.email.label_tag }}{{ registration_form.email }}
+                    </fieldset> <!-- end contact -->
+                    <fieldset id="company">
+                        <legend>Company Details</legend>
+                        {{ registration_form.company.label_tag }}{{ registration_form.company }}
+                        {{ registration_form.position.label_tag }}{{ registration_form.position }}
+                        {{ registration_form.website.label_tag }}{{ registration_form.website }}
+                    </fieldset> <!-- end company -->
+                    <fieldset id="meals">
+                        <legend>Meal Plan</legend>
+                        {{ registration_form.meals.label_tag }}{{ registration_form.meals }}
+                    </fieldset> <!-- end meal plan -->
+                    <fieldset id="billing">
+                        <legend>Billing Information</legend>
+                        {{ registration_form.billing_firstname.label_tag }}{{ registration_form.billing_firstname }}
+                        {{ registration_form.billing_lastname.label_tag }}{{ registration_form.billing_lastname }}<br>
+                        {{ registration_form.card_type.label_tag }}{{ registration_form.card_type }}
+                        {{ registration_form.card_number.label_tag }}{{ registration_form.card_number.errors }}{{ registration_form.card_number }}
+                        {{ registration_form.card_csv.label_tag }}{{ registration_form.card_csv.errors }}{{ registration_form.card_csv }} <br>
+                        {{ registration_form.exp_month.label_tag }}{{ registration_form.exp_month }}
+                        {{ registration_form.exp_year.label_tag }}{{ registration_form.exp_year }}
+                    </fieldset> <!-- end billing -->
+                    <fieldset id="workshops">
+                        <legend>Workshops</legend>
+                        {{ registration_form.session1.label_tag }}{{ registration_form.session1 }}
+                        {{ registration_form.session2.label_tag }}{{ registration_form.session2 }}
+                        {{ registration_form.session3.label_tag }}{{ registration_form.session3 }}
+                    </fieldset>
+                    <button class="submitButton" type="submit" form="registrationForm" id="subBut">Submit</button>
+                </form>
+            </section> <!-- end infoPanel -->
+        </main>
+   {% include 'partials/footer.html' %}
+    </div> <!-- end content -->
+
+    <script type="text/javascript" src="{% static 'js/conference.js' %}"></script>
+</body>
+</html>

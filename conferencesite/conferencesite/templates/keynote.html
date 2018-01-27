@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--    Name: Kristina Watkins
+        Assignment: CS336 Assignment #4
+        Created: 10/30/2017
+        Description:  keynote speaker page for the military cyber forensics conference page
+-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'styles/webdefault.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt:300" rel="stylesheet">
+
+    <meta name="author" content="Kristina Watkins">
+    <meta charset="UTF-8">
+    <meta name="description" content="Military Cyber Forensics Conference Keynote Speakers">
+    <meta name="keywords" content="sports, resume, activities, books">
+    <meta name="robots" content="nofollow, noimageindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Military Cyber Forensics Conference Keynote Speakers</title>
+</head>
+<body>
+<div class="content">
+    {% include 'partials/navigation.html' %}
+    <main>
+        <h1 class="pageTitle">Keynote Speakers</h1>
+
+        <section class="infoPanel" id="keynotePanel">
+                <article class="speaker">
+                    <figure>
+                        <img src="{% static 'images/KristaWatkins.jpg' %}">
+                        <figcaption><span>Kristina Watkins</span><br>
+                            Specialist in both fingerprint analysis and digital image analysis.  She holds a B.S. in
+                            Computer Science and an M.S. in Forensics</figcaption>
+                    </figure>
+
+                </article>
+                <article class="speaker">
+                    <figure>
+                        <img src="{% static 'images/stefanOrlygsson.jpg' %}">
+                        <figcaption><span>Stefan Orlygsson</span><br>
+                        Specialist in aircraft computer fraud and drug trafficking.  He previously was an aircraft mechanic
+                        and now a Computer Hacking Forensic Investigator</figcaption>
+                    </figure>
+                </article>
+        </section>
+    </main>
+    {% include 'partials/footer.html' %}
+</div> <!-- end of .content -->
+
+</body>
+</html>

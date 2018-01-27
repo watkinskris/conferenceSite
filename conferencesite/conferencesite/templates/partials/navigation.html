@@ -1,0 +1,37 @@
+
+        <header>
+            <div class="headerWrap" id="headUpper">
+                <div class="headerBox" id="conferenceName">
+                    <p>
+                        Military Cyber Forensics <br>
+                        Conference
+                    </p>
+                </div>
+                <div class="headerBox" id="conferenceDate">
+                    <p> 18 - 19 March 2018<br>
+                        <span class="conferenceLocation">Walter E. Washington Convention Center</span>
+                    </p>
+                </div>
+                <div class="headerBox" id="registerButton">
+                    <p><a href="{% url 'registration' %}" class="button linkStyle">Register Now</a></p>
+                </div>
+            </div>
+            <div class="headerWrap" id="headLower">
+                <div id="outterWrapper">
+                    <div  class="innerStyle" id="leftSide"></div>
+                    <div class="innerStyle" id="rightSide"></div>
+                    <div class="innerStyle" id="middle">
+                        <nav>
+                            <ul class="noListType" id="navigationLinks">
+                                <li> <a class= "linkStyle" href="{% url 'index' %}">Home</a> </li>
+                                <li><a class="linkStyle" href="{% url 'keynote' %}">Keynote Speakers</a></li>
+                                <li><a class="linkStyle" href="{% url 'workshop' %}">Workshops</a></li>
+                                <li><a class="linkStyle" href="{% url 'meals' %}">Meal Choices</a></li>
+                                <li><a class="linkStyle" href="{% url 'awards' %}">Awards</a></li>
+                                <li><a class="linkStyle" href="{% url 'activities' %}">Outside Activities</a></li>
+                            </ul>
+                        </nav>
+                    </div> <!-- end middle -->
+                </div><!-- end outterWrapper -->
+            </div> <!-- end headLower -->
+        </header>

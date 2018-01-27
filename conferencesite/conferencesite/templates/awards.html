@@ -1,0 +1,71 @@
+{% load staticfiles %}
+{% load static %}
+<!DOCTYPE html>
+<!--    Name: Kristina Watkins
+        Assignment: CS336 Assignment #4
+        Created: 10/30/2017
+        Description:  award page for the one piece of equipment you could never do your job without
+-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'styles/poll.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt:300" rel="stylesheet">
+
+    <meta name="author" content="Kristina Watkins">
+    <meta charset="UTF-8">
+    <meta name="description" content="Award page for the cyber forensics conference">
+    <meta name="keywords" content="cyber, forensics, military, awards">
+    <meta name="robots" content="nofollow, noimageindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Military Cyber Forensics Conference Awards</title>
+</head>
+<body>
+<div class="content">
+    {% include 'partials/navigation.html' %}
+    <main>
+        <h1 class="pageTitle"> Military Cyber Forensics Conference Awards</h1>
+        <h2>Cast your vote now!</h2>
+
+        <section class="infoPanel" id="awardPanel">
+            <h2>Whats is the one piece of equipment you use the most in your day to
+                day routine. </h2>
+            <form id="awardForm" action="{% url 'awards' %}" method="post" >{% csrf_token %}
+                <table class="table">
+                    <tr>
+                        <th class="entry">Entry</th>
+                        <th class="title">Title</th>
+                        <th class="description">Description</th>
+                        <th class="votes">Current Votes</th>
+                        <th class="voteButton">Vote</th>
+                    </tr> <!-- end headings -->
+                    {% for nominee in nominee_list %}
+                    <tr>
+                        <td class="entry"><img src="{% get_static_prefix %}images/{{ nominee.nominee_image_name }}" alt= {{ nominee.nominee_name }} />
+                        </td>
+                        <td class="title">{{ nominee.nominee_name }}</td>
+                        <td class="description">
+                            {{ nominee.nominee_description }}
+                        </td>
+                        <td class="votes"> {{ nominee.num_votes }}</td>
+                        <td class="voteButton">
+                            <label>
+                                <input type="radio" name="pollButton" value= {{ nominee.nominee_name }} required>
+                                Vote for {{ nominee.nominee_name }}
+                            </label>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                <div id="buttonArea">
+                    <button class="submitButton" id="pollSubmit" type="submit" form="awardForm">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+   {% include 'partials/footer.html' %}
+</div> <!-- end of .content -->
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--    Name: Kristina Watkins
+        Assignment: CS336 Assignment #4
+        Created: 10/30/2017
+        Description:  Meal page for Military Cyber Forensics Conference site
+-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'styles/webdefault.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt:300" rel="stylesheet">
+
+    <meta name="author" content="Kristina Watkins">
+    <meta charset="UTF-8">
+    <meta name="description" content="Meal page for Military Cyber Forensics Conference">
+    <meta name="keywords" content="meals, conference, forensics, cyber">
+    <meta name="robots" content="nofollow, noimageindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Military Cyber Forensics Conference Meals</title>
+</head>
+<body>
+<div class="content">
+    {% include 'partials/navigation.html' %}
+    <main>
+        <h1 class="pageTitle">Military Cyber Forensics Conference Menu </h1>
+        <h3 class="subTitle">Full Meal Package: $250.00 (includes dinner on day 2)<br>
+                            Dinner Day 2: $75.00
+        </h3>
+        <section class="infoPanel" id="menuPanel">
+            <div class="infoWrapper" id="menuWrapper">
+                <div class="menuDay">
+                    <img src="{% static 'images/menuTag.png' %}">
+                    <div class="day">
+                        Day 1
+                    </div>
+
+                    <div class="mealType">
+                        Breakfast
+                    </div>
+
+                    <div class="foodType">
+                        Pastry, Muffins, Coffee, Tea
+                    </div>
+
+                    <div class="mealType">
+                        Lunch
+                    </div>
+
+                    <div class="foodType">
+                        Sandwich, Chips, Salad, Tea, Coffee, Soda
+                    </div>
+
+                    <div class="mealType">
+                        Dinner
+                    </div>
+                        BBQ Chicken, Fried Fish, Steamed Veggies, Salad, Wine
+                    <div class="foodType">
+
+                    </div>
+                </div> <!-- end menu 1 -->
+
+                <div class="menuDay">
+                    <img src="{% static 'images/menuTag2.png' %}">
+                    <div class="day">
+                        Day 2
+                    </div>
+
+                    <div class="mealType">
+                        Breakfast
+                    </div>
+
+                    <div class="foodType">
+                        Pastry, Muffins, Coffee, Tea
+                    </div>
+
+                    <div class="mealType">
+                        Lunch
+                    </div>
+
+                    <div class="foodType">
+                        Pizza, Pasta, Salad, Coffee, Tea, Soda
+                    </div>
+
+                    <div class="mealType">
+                        Dinner
+                    </div>
+
+                    <div class="foodType">
+                        Rib-Eye Steak, Seared Tuna, Baked Potato, Salad, Wine
+                    </div>
+                </div> <!-- end menu 2 -->
+            </div> <!-- end wrapper -->
+        </section>
+    </main>
+    {% include 'partials/footer.html' %}
+</div> <!-- end of .content -->
+
+</body>
+</html>

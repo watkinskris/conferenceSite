@@ -1,0 +1,9 @@
+{
+"nominees": [
+{"nominee_name": "Universal Forensic Extraction Device", "nominee_description": "Behold the fabulous universal forensic extraction device.  This little device allows the forensic expert to extract both logical and physical data, even if it has been deleted.  It works on smartphones and GPS devices.", "nominee_image_name": "forensicExtractionDevice.jpg", "num_votes": "0"},
+{"nominee_name": "Digital Mobile Device Kit", "nominee_description": "This digital mobile device kit is all the rage for professionals working with mobile devices.  Containg tools for review of mobile devices including cell phones, tables and other touch devices, it is as versatile as it is necassary in any investigators tool kit.", "nominee_image_name": "digitalMobileDeviceKit.jpg", "num_votes": "0"},
+{"nominee_name": "Electrostatic Dissipation Bags", "nominee_description": "Ever worried that static electricity or electronic pulses will destroy valuable information on your digital evidence.  Well, fear no more, electrostatic dissipation bags are here to save your data.  Designed to protect information on electronic devices from exposure to static electricity and electrostatic impulses, these little bags are a forensic examiners best friend.", "nominee_image_name": "electrostaticBags.jpg", "num_votes": "0"},
+{"nominee_name": "Write Blocker", "nominee_description": "Need to make sure the integrity of the digital information you obtain is preserved.  Will that evidence be presented in court?  Then you need the Write Blocker.  The essential tool for preserving the integrity of information uncovered during a forensic investigation.  Make sure your data has been secured in a forensic manner by investing in one today.", "nominee_image_name": "writeBlocker.png", "num_votes": "0"}
+
+]
+}

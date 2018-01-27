@@ -1,0 +1,60 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: lightsteelblue;
+}
+#paperSize{
+    width: 8.5in;
+    background-color: white;
+    margin: 0 auto;
+}
+.container{
+    padding: 0;
+}
+.column{
+    display: inline-block;
+}
+.column div{
+    width: 86mm;
+    height: 59mm;
+    outline: 1px solid;
+    padding: 0;
+    margin-top: 4.5mm;
+    text-align: center;
+    display: table;
+}
+
+.column div:first-child{
+    margin-top: 14mm;
+}
+
+.column div:last-child{
+    margin-bottom: 14mm;
+}
+
+.column ul{
+    list-style: none;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.leftColumn{
+    margin-left: 17mm;
+    margin-right: 9mm;
+    padding: 0;
+}
+
+.fname{
+    font-size: 22px;
+}
+
+.lname, .companyName, .location{
+    font-size: 12px;
+}
+
+.position{
+    font-size: 14px;
+    font-weight: bold;
+}

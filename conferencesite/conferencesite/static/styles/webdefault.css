@@ -1,0 +1,340 @@
+/* site wide css */
+html, body{
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    min-height: 100%;
+    position:relative;
+}
+
+body{
+    background-image: url("../../static/images/cyber1.jpg");
+    background-size: 100%;
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 12vw;
+}
+.headerWrap{
+    height: 5vw;
+    padding-top: 5px;
+}
+
+#headUpper{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    height: 7vw
+}
+
+.conferenceLocation{
+    font-size: .9em;
+}
+
+a.button {
+    color: white;
+    text-decoration: none;
+    background-color: #ff3300;
+    padding: 1vw 1vw;
+    border-radius: 20px;
+    position: relative;
+    top: 15px;
+}
+
+div.headerBox{
+    width: 33.3%;
+    height: 7vw;
+    text-align: center;
+    display:inline-block;
+    float:left;
+}
+
+#headLower{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+div.innerStyle{
+    height:3vw;
+    width: 20%;
+    display:inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    margin-top: 11px;
+}
+
+#middle{
+    width:60%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#leftSide, #middle{
+    float: left;
+}
+
+.innerStyle ul{
+    text-align: center;
+    margin-top: 12px;
+}
+
+ul.noListType{
+    list-style: none;
+}
+
+.innerStyle li{
+    display:inline;
+    padding-left: 5%;
+}
+
+.innerStyle li:first-child{
+    padding-left:0;
+    margin-left: -30px;
+}
+
+.linkStyle{
+    text-decoration: none;
+    color:white;
+}
+
+.linkStyle:hover{
+    background-color: dimgrey;
+    border-radius: 5px;
+}
+
+#navigationLinks li:active{
+    color: dimgrey;
+}
+
+
+@media (max-width: 1200px) {
+    .headerBox p{
+        margin: 8px 0 -2px 0;
+    }
+
+    div.innerStyle{
+        margin: 8px 0 -2px 0;
+    }
+
+
+    .innerStyle li{
+        padding-left: 3%;
+
+    }
+
+    div.innerStyle{
+        width: 15%;
+    }
+
+    #middle{
+        width:70%;
+    }
+
+    #middle ul{
+        margin: 8px 0 -2px 0;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+a#inParagraph{
+    color: red
+}
+
+main{
+    padding: 0 0 130px;
+}
+.subTitle, .pageTitle{
+    color:black;
+}
+h1.pageTitle{
+    text-align: center;
+    font-size: 3vw;
+}
+
+section.infoPanel{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 70px auto 0;
+    padding: 30px 30px 30px 30px;
+    font-family: 'Rokkitt', serif;
+}
+figure{
+    width: 20vw;
+}
+/* end site wide css */
+
+/* Index page css */
+h3.subTitle{
+    text-align: center;
+    font-size: 1.5vw;
+    margin-top: -20px;
+}
+#location{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 21vw;
+    margin: 0 auto;
+    border-radius: 20px;
+    color:white;
+    font-family: 'Rokkitt', serif;
+}
+
+#location ul{
+    text-align: center;
+    margin-left: -40px;
+}
+.listOfOfferings{
+    margin: 0 auto;
+    width: 40vw;
+    font-weight: bold;
+}
+/*end index page css */
+
+
+/* workshop page */
+#workshopTable{
+    width: 85vw;
+}
+#workshopTable tr{
+    vertical-align: middle;
+    text-align: center;
+}
+td {
+    font-variant: small-caps;
+}
+
+/* end workshop */
+
+/* activity page */
+#activityPanel{
+    height: 350px;
+}
+#activityPanel table td{
+    width: 350px;
+}
+.activity{
+    background-color: rgba(0,0,0,0.6);
+    float: left;
+    text-align: center;
+    color: white;
+    padding: 10px 0 0 0;
+}
+.activity:first-child{
+    margin-left: 0;
+}
+.activity:last-child{
+    padding-right: 50px;
+}
+/* end activities */
+
+/* keynote page */
+#keynotePanel, #activityPanel, #menuPanel {
+    display: inline-block;
+    width: 100%;
+}
+#keynotePanel article{
+    float: left;
+    margin-left: 17vw;
+    text-align: center;
+}
+figcaption{
+    width: 250px;
+    margin: 0 auto;
+}
+span{
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+/* end keynote */
+/* menu page */
+
+.menuDay{
+    float: left;
+    text-align: center;
+    margin-left: 250px;
+}
+.menuDay img{
+    width: 180px;
+    margin: 0 auto;
+}
+div.day{
+    font-weight: bold;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+div.mealType{
+    font-weight: bold;
+    font-size: 1vw;
+    margin-bottom: .5vw;
+}
+
+div.foodType{
+    margin-bottom: .5vw;
+}
+
+div.menu > div:nth-child(2){
+    border: none;
+}
+
+/* end menu */
+
+/*thank you page */
+#registrant_info{
+    margin-left: 400px;
+}
+#registrant_info ul{
+    list-style: none;
+}
+#registrant_info p{
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 25px;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    color: white;
+}
+
+footer li{
+    list-style: none;
+    font-size:1vw;
+}
+
+footer li:first-child{
+    font-size: 1.5vw;
+}
+
+
+footer li:last-child{
+    padding-right: 0;
+}
+footer div{
+    font-size: .8vw;
+    font-style: italic;
+}
+.admin{
+    font-style: normal;
+    font-size: 1vw;
+}
+.admin a{
+    color: red;
+}
+
+
+

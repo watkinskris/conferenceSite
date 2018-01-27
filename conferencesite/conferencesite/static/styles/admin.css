@@ -1,0 +1,40 @@
+body{
+    background-color: lightsteelblue;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color: white;
+    height: 70px;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.adminActions{
+    width: 1000px;
+    margin: 10px 0 30px 40px;
+    padding-bottom: 50px;
+}
+
+.submitButton{
+    height: 50px;
+    width: 200px;
+    margin-top: 10px;
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+.listButton{
+    height: 30px;
+    width: 100px;
+    margin: 10px 10px 0 30px;
+}
+.listButton:last-child{
+    margin-left: 0;
+}
+#registrantSubmit{
+    margin-left:30px;
+}

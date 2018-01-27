@@ -1,0 +1,76 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--    Name: Kristina Watkins
+        Assignment: CS336 Assignment #4
+        Created: 10/30/2017
+        Description: Thank you for registering page for the Military Cyber Forensics Conference site
+-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'styles/webdefault.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt:300" rel="stylesheet">
+
+    <meta name="author" content="Kristina Watkins">
+    <meta charset="UTF-8">
+    <meta name="description" content="Thank you for registering for the conference">
+    <meta name="keywords" content="thanks, military, conference, cyber, forensics, register">
+    <meta name="robots" content="nofollow, noimageindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Military Cyber Forensics Conference - Thanks for Registering</title>
+</head>
+<body>
+<div class="content">
+    {% include 'partials/navigation.html' %}
+    <main>
+        <h1 class="pageTitle">Thank you {{ new_registrant.title }} {{ new_registrant.lastname }} for registering for
+            the Military Cyber Forensics Conference 2018</h1>
+        <h3 class="subTitle">Please review your registration information below and print this to bring with you to the conference</h3>
+        <section class="infoPanel">
+            <div id="registrant_info">
+                <p>Contact Information</p>
+                    <ul>
+                        <li>{{ new_registrant.firstname }} {{ new_registrant.lastname }}</li>
+                        <li>{{ new_registrant.address1 }}</li>
+
+                        {% if new_registrant.address2 %}
+                            <li>{{ new_registrant.address2 }}</li>
+                        {% endif %}
+
+                        <li>{{ new_registrant.city }}, {{ new_registrant.state }} {{ new_registrant.zipcode }}</li>
+                        <li>{{ new_registrant.telephone }}</li>
+                        <li>{{ new_registrant.email }}</li>
+                    </ul>
+                <p>Meal Pack Selected</p>
+                    <ul>
+                        <li>{{ new_registrant.meals }}</li>
+                    </ul>
+                <p>Company Information</p>
+                    <ul>
+                        <li>{{ new_registrant.company }}</li>
+                        <li>{{ new_registrant.position }}</li>
+
+                        {% if new_registrant.website %}
+                            <li>{{ new_registrant.website }}</li>
+                        {% endif %}
+
+                    </ul>
+                <p>Workshop choices</p>
+                    <ul>
+                        <li>{{ new_registrant.session1 }}</li>
+
+                        {% if new_registrant.session2 %}
+                            <li>{{ new_registrant.session2 }}</li>
+                        {% endif %}
+
+                        <li>{{ new_registrant.session3 }}</li>
+                    </ul>
+            </div>
+        </section>
+    </main>
+   {% include 'partials/footer.html' %}
+</div> <!-- end of .content -->
+
+</body>
+</html>

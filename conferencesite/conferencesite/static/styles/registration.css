@@ -1,0 +1,252 @@
+html, body{
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+.content{
+    min-height: 100%;
+    position:relative;
+}
+
+body{
+    background-image: url("../../static/images/cyber1.jpg");
+    background-size: 100%;
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 12vw;
+}
+.headerWrap{
+    height: 5vw;
+    padding-top: 5px;
+}
+
+#headUpper{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    height: 7vw
+}
+
+.conferenceLocation{
+    font-size: .9em;
+}
+
+a.button {
+    color: white;
+    text-decoration: none;
+    background-color: #ff3300;
+    padding: 1vw 1vw;
+    border-radius: 20px;
+    position: relative;
+    top: 15px;
+}
+
+div.headerBox{
+    width: 33.3%;
+    height: 7vw;
+    text-align: center;
+    display:inline-block;
+    float:left;
+}
+
+#headLower{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+div.innerStyle{
+    height:3vw;
+    width: 20%;
+    display:inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    margin-top: 11px;
+}
+
+#middle{
+    width:60%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#leftSide, #middle{
+    float: left;
+}
+
+.innerStyle ul{
+    text-align: center;
+    margin-top: 12px;
+}
+
+ul.noListType{
+    list-style: none;
+}
+
+.innerStyle li{
+    display:inline;
+    padding-left: 5%;
+}
+
+.innerStyle li:first-child{
+    padding-left:0;
+    margin-left: -30px;
+}
+
+.linkStyle{
+    text-decoration: none;
+    color:white;
+}
+
+.linkStyle:hover{
+    background-color: dimgrey;
+    border-radius: 5px;
+}
+
+#navigationLinks li:active{
+    color: dimgrey;
+}
+
+
+@media (max-width: 1200px) {
+    .headerBox p{
+        margin: 8px 0 -2px 0;
+    }
+
+    div.innerStyle{
+        margin: 8px 0 -2px 0;
+    }
+
+
+    .innerStyle li{
+        padding-left: 3%;
+
+    }
+
+    div.innerStyle{
+        width: 15%;
+    }
+
+    #middle{
+        width:70%;
+    }
+
+    #middle ul{
+        margin: 8px 0 -2px 0;
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color:white;
+}
+
+a#inParagraph{
+    color: red
+}
+
+main{
+    padding: 0 0 130px;
+}
+.subTitle, .pageTitle{
+    color:black;
+}
+h1.pageTitle{
+    text-align: center;
+    font-size: 3vw;
+}
+
+section.infoPanel{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 70px auto 0;
+    padding: 30px 30px 30px 30px;
+    font-family: 'Rokkitt', serif;
+}
+#registrationForm{
+    width: 1000px;
+    margin: 0 auto;
+}
+fieldset{
+    border: groove 2px black;
+}
+fieldset#workshops ul {
+    list-style-type: none
+}
+legend{
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.3vw;
+}
+
+#registrationForm div{
+    padding-top: 5px;
+}
+#registrationForm fieldset{
+    padding-bottom: 20px;
+}
+#id_title{
+    margin-left: 10px;
+}
+#registrationForm label, #registrationForm input{
+    padding: 0 0 5px 10px;
+    margin: 0 0 10px 10px;
+    font-size: 13px;
+}
+#registrationForm label{
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 17px;
+}
+
+#subBut{
+    margin-left: 47%;
+    font-size: 1.5vw;
+    border-radius: 10px;
+    width: 100px;
+}
+
+fieldset:hover{
+    border: 10px outset black;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    font-variant: small-caps;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    color: white;
+}
+
+footer li{
+    list-style: none;
+    font-size:1vw;
+}
+
+footer li:first-child{
+    font-size: 1.5vw;
+}
+
+
+footer li:last-child{
+    padding-right: 0;
+}
+footer div{
+    font-size: .8vw;
+    font-style: italic;
+}
+.admin{
+    font-style: normal;
+    font-size: 1vw;
+}
+.admin a{
+    color: red;
+}
+

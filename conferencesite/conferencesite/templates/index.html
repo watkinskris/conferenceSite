@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!--    Name: Kristina Watkins
+        Assignment: CS336 Assignment #4
+        Created: 10/30/2017
+        Description: Index page for the Military Cyber Forensics Conference site
+-->
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'styles/webdefault.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rokkitt:300" rel="stylesheet">
+
+    <meta name="author" content="Kristina Watkins">
+    <meta charset="UTF-8">
+    <meta name="description" content="Home page for the military cyber forensics conference website">
+    <meta name="keywords" content="home, military, conference, cyber, forensics">
+    <meta name="robots" content="nofollow, noimageindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Military Cyber Forensics Conference 2018 - Home</title>
+</head>
+<body>
+    <div class="content">
+        {% include 'partials/navigation.html' %}
+        <main>
+            <h1 class="pageTitle">Welcome to the Military Cyber Forensics Conference</h1>
+            <h3 class="subTitle">March 18 - 19  2018</h3>
+
+            <div id="location">
+                <ul class="noListType" id="address">
+                    <li>Walter E. Washington Convention Center</li>
+                    <li> Washington, D.C. </li>
+                </ul>
+            </div>
+
+            <section class="infoPanel">
+
+                <p>The Military Cyber Forensics Conference is the largest convention of its kind.  From keynote speakers to
+                    workshops, everyone will walk away a little wiser and, hopefully, with new techniques to try.  These are some
+                    of the We have over things attendees can expect to find at the convention:
+                </p>
+                    <div class="listOfOfferings">
+                        <ul>
+                            <li>25 vendors covering software, hardware and testing kits</li>
+                            <li>3 Keynote speakers with vast experience in the field</li>
+                            <li>9 workshops to choose from</li>
+                            <li>Award for the piece of equipment used most in the day to day work life</li>
+                        </ul>
+                    </div>
+
+                    If there is something that you would like to see covered, or to inquire about being part of the
+                        conference, please contact us at
+                        <a id="inParagraph" href="mailto:info@mcfc.com">info@mcfc.com</a>.
+                </section>
+        </main>
+   {% include 'partials/footer.html' %}
+    </div> <!-- end .content -->
+</body>
+</html>
